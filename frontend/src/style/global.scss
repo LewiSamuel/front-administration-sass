@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f8f8f8;
+}
+
+body, input, button, textarea{
+  font: 400 16px 'Roboto', sans-serif;
+}
+
+
+.btn{
+  padding: 15px 36px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn-primary{
+  background-color: #d6b6a7;
+  font-variant-caps: all-small-caps;
+  font-weight: bold;
+  color: #4c3628;
+}
+
+.btn-secondary{
+  background-color: transparent;
+  font-variant-caps: all-small-caps;
+  font-weight: bold;
+  color: #f6d5c0;
+  border: 1px solid #c3a694;
+}

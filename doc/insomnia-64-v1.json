@@ -1,0 +1,746 @@
+{
+        "_type": "export",
+        "__export_format": 4,
+        "__export_date": "Tue Aug 17 2021 16:29:09 GMT-0300 (Horário Padrão de Brasília)",
+        "__export_source": "insomnia.desktop.app:v2021.3.0",
+        "resources": [{
+                "_id": "fld_0",
+                "parentId": "wrk_Zxkjp-LhWiE-vpJXI",
+                "name": "User",
+                "description": "",
+                "environment": {},
+                "environmentPropertyOrder": null,
+                "metaSortKey": -1623677756675,
+                "_type": "request_group"
+            },{
+                "_id": "fld_Z8PcO",
+                "parentId": "wrk_Zxkjp-LhWiE-vpJXI",
+                "name": "Post",
+                "description": "",
+                "environment": {},
+                "environmentPropertyOrder": null,
+                "metaSortKey": -1623677756675,
+                "_type": "request_group"
+            },{
+                "_id": "wrk_Zxkjp-LhWiE-vpJXI",
+                "parentId": null,
+                "name": "64",
+                "description": "",
+                "scope": "collection",
+                "_type": "workspace"
+            },
+            {
+                "_id": "env_fDwQUhKU",
+                "parentId": "wrk_Zxkjp-LhWiE-vpJXI",
+                "name": "Base Environment",
+                "data": {},
+                "dataPropertyOrder": null,
+                "color": null,
+                "isPrivate": false,
+                "metaSortKey": 1623433795690,
+                "_type": "environment"
+            },{
+                "_id": "req_save'0'",
+                "parentId": "fld_0",
+                "url": "{{ _.baseUrl }}/User/save",
+                "name": "Save",
+                "description": "User save",
+                "method": "POST",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [{
+                            "name": "Name",
+                            "value": "< Name >",
+                            "description": "",
+                            "id": "pair_BRK59"
+                        },{
+                            "name": "Email",
+                            "value": "< Email >",
+                            "description": "",
+                            "id": "pair_KhakX"
+                        },{
+                            "name": "Password",
+                            "value": "< Password >",
+                            "description": "",
+                            "id": "pair_QarqE"
+                        }]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_list'0'",
+                "parentId": "fld_0",
+                "url": "{{ _.baseUrl }}/User/list",
+                "name": "List",
+                "description": "User list",
+                "method": "GET",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [{
+                            "name": "Name",
+                            "value": "< Name >",
+                            "description": "",
+                            "id": "pair_BRK59"
+                        },{
+                            "name": "Email",
+                            "value": "< Email >",
+                            "description": "",
+                            "id": "pair_KhakX"
+                        },{
+                            "name": "Password",
+                            "value": "< Password >",
+                            "description": "",
+                            "id": "pair_QarqE"
+                        }]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_listOne'0'",
+                "parentId": "fld_0",
+                "url": "{{ _.baseUrl }}/User/list/<id>",
+                "name": "List One",
+                "description": "User list id",
+                "method": "GET",
+                "body": {
+                    "mimeType": "multipart/form-data"
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+            "_id": "req_UpdateOne'0'",
+            "parentId": "fld_0",
+            "url": "{{ _.baseUrl }}/User/Update/<field>",
+            "name": "Update One",
+            "description": "User Update especifc field",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "multipart/form-data"
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "value": "< id >",
+                    "description": "",
+                    "id": "pair_0id"
+                },
+                {
+                    "name": "value",
+                    "value": "< value >",
+                    "description": "",
+                    "id": "pair_0d2pvF0gk"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "{{ _.Authorization }}",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1623677756625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },{
+                "_id": "req_update'0'",
+                "parentId": "fld_0",
+                "url": "{{ _.baseUrl }}/User/update",
+                "name": "Update",
+                "description": "User update",
+                "method": "PUT",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [
+                        {
+                            "name": "id",
+                            "value": "< id >",
+                            "description": "",
+                            "id": "pair_0id"
+                        },{
+                            "name": "Name",
+                            "value": "< Name >",
+                            "description": "",
+                            "id": "pair_BRK59"
+                        },{
+                            "name": "Email",
+                            "value": "< Email >",
+                            "description": "",
+                            "id": "pair_KhakX"
+                        },{
+                            "name": "Password",
+                            "value": "< Password >",
+                            "description": "",
+                            "id": "pair_QarqE"
+                        }]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_search'0'",
+                "parentId": "fld_0",
+                "url": "{{ _.baseUrl }}/User/search",
+                "name": "Search",
+                "description": "User search",
+                "method": "GET",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [{
+                            "name": "Name",
+                            "value": "< Name >",
+                            "description": "",
+                            "id": "pair_BRK59"
+                        },{
+                            "name": "Email",
+                            "value": "< Email >",
+                            "description": "",
+                            "id": "pair_KhakX"
+                        },{
+                            "name": "Password",
+                            "value": "< Password >",
+                            "description": "",
+                            "id": "pair_QarqE"
+                        }]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_auth'0'",
+                "parentId": "fld_0",
+                "url": "{{ _.baseUrl }}/User/auth",
+                "name": "Auth",
+                "description": "User auth",
+                "method": "POST",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [
+                        {
+                            "name": "Email",
+                            "value": "< Email >",
+                            "description": "",
+                            "id": "pair_Email0"
+                        },
+                        {
+                            "name": "Password",
+                            "value": "< Password >",
+                            "description": "",
+                            "id": "pair_Password0"
+                        }
+                    ]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_delete'0'",
+                "parentId": "fld_0",
+                "url": "{{ _.baseUrl }}/User/delete",
+                "name": "Auth",
+                "description": "User delete",
+                "method": "DELETE",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [
+                        {
+                            "name": "id",
+                            "value": "< id >",
+                            "description": "",
+                            "id": "pair_0id"
+                        },
+                    ]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_save'Z8PcO'",
+                "parentId": "fld_Z8PcO",
+                "url": "{{ _.baseUrl }}/Post/save",
+                "name": "Save",
+                "description": "Post save",
+                "method": "POST",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [{
+                            "name": "Titulo",
+                            "value": "< Titulo >",
+                            "description": "",
+                            "id": "pair_zuYwV"
+                        },{
+                            "name": "Descr",
+                            "value": "< Descr >",
+                            "description": "",
+                            "id": "pair_sFsyp"
+                        },{
+                            "name": "u",
+                            "value": "< u >",
+                            "description": "",
+                            "id": "pair_fHdzT"
+                        }]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_list'Z8PcO'",
+                "parentId": "fld_Z8PcO",
+                "url": "{{ _.baseUrl }}/Post/list",
+                "name": "List",
+                "description": "Post list",
+                "method": "GET",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [{
+                            "name": "Titulo",
+                            "value": "< Titulo >",
+                            "description": "",
+                            "id": "pair_zuYwV"
+                        },{
+                            "name": "Descr",
+                            "value": "< Descr >",
+                            "description": "",
+                            "id": "pair_sFsyp"
+                        },{
+                            "name": "u",
+                            "value": "< u >",
+                            "description": "",
+                            "id": "pair_fHdzT"
+                        }]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_listOne'Z8PcO'",
+                "parentId": "fld_Z8PcO",
+                "url": "{{ _.baseUrl }}/Post/list/<id>",
+                "name": "List One",
+                "description": "Post list id",
+                "method": "GET",
+                "body": {
+                    "mimeType": "multipart/form-data"
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+            "_id": "req_UpdateOne'Z8PcO'",
+            "parentId": "fld_Z8PcO",
+            "url": "{{ _.baseUrl }}/Post/Update/<field>",
+            "name": "Update One",
+            "description": "Post Update especifc field",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "multipart/form-data"
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "value": "< id >",
+                    "description": "",
+                    "id": "pair_Z8PcOid"
+                },
+                {
+                    "name": "value",
+                    "value": "< value >",
+                    "description": "",
+                    "id": "pair_Z8PcO2Z04GUDk"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "{{ _.Authorization }}",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1623677756625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },{
+                "_id": "req_update'Z8PcO'",
+                "parentId": "fld_Z8PcO",
+                "url": "{{ _.baseUrl }}/Post/update",
+                "name": "Update",
+                "description": "Post update",
+                "method": "PUT",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [
+                        {
+                            "name": "id",
+                            "value": "< id >",
+                            "description": "",
+                            "id": "pair_Z8PcOid"
+                        },{
+                            "name": "Titulo",
+                            "value": "< Titulo >",
+                            "description": "",
+                            "id": "pair_zuYwV"
+                        },{
+                            "name": "Descr",
+                            "value": "< Descr >",
+                            "description": "",
+                            "id": "pair_sFsyp"
+                        },{
+                            "name": "u",
+                            "value": "< u >",
+                            "description": "",
+                            "id": "pair_fHdzT"
+                        }]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_search'Z8PcO'",
+                "parentId": "fld_Z8PcO",
+                "url": "{{ _.baseUrl }}/Post/search",
+                "name": "Search",
+                "description": "Post search",
+                "method": "GET",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [{
+                            "name": "Titulo",
+                            "value": "< Titulo >",
+                            "description": "",
+                            "id": "pair_zuYwV"
+                        },{
+                            "name": "Descr",
+                            "value": "< Descr >",
+                            "description": "",
+                            "id": "pair_sFsyp"
+                        },{
+                            "name": "u",
+                            "value": "< u >",
+                            "description": "",
+                            "id": "pair_fHdzT"
+                        }]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "req_delete'Z8PcO'",
+                "parentId": "fld_Z8PcO",
+                "url": "{{ _.baseUrl }}/Post/delete",
+                "name": "Auth",
+                "description": "Post delete",
+                "method": "DELETE",
+                "body": {
+                    "mimeType": "multipart/form-data",
+                    "params": [
+                        {
+                            "name": "id",
+                            "value": "< id >",
+                            "description": "",
+                            "id": "pair_Z8PcOid"
+                        },
+                    ]
+                },
+                "parameters": [],
+                "headers": [
+                    {
+                        "name": "Content-Type",
+                        "value": "multipart/form-data"
+                    },
+                    {
+                        "name": "Authorization",
+                        "value": "{{ _.Authorization }}",
+                        "description": ""
+                    }
+                ],
+                "authentication": {},
+                "metaSortKey": -1623677756625,
+                "isPrivate": false,
+                "settingStoreCookies": true,
+                "settingSendCookies": true,
+                "settingDisableRenderRequestBody": false,
+                "settingEncodeUrl": true,
+                "settingRebuildPath": true,
+                "settingFollowRedirects": "global",
+                "_type": "request"
+            },{
+                "_id": "spc_TxSzc8VmFl",
+                "parentId": "wrk_Zxkjp-LhWiE-vpJXI",
+                "fileName": "undefined",
+                "contents": "",
+                "contentType": "yaml",
+                "_type": "api_spec"
+            },
+            {
+                "_id": "env_wrk_Zxkjp-LhWiE-vpJXI",
+                "parentId": "env_fDwQUhKU",
+                "name": "LocalHost",
+                "data": {
+                    "baseUrl": "http://localhost:5000",
+                    "Authorization": "PUT_HERE"
+                },
+                "dataPropertyOrder": {
+                    "&": [
+                        "baseUrl",
+                        "Authorization"
+                    ]
+                },
+                "color": "#0088ff",
+                "isPrivate": false,
+                "metaSortKey": 1623677815553,
+                "_type": "environment"
+            }
+        ]
+    }

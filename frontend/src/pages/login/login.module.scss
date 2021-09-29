@@ -1,0 +1,67 @@
+.global{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+
+  .fullLogin{
+    width: 90vw;
+    max-width: 1800px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 7px 7px 11px 0px #00000038;
+
+    .tableLogin{
+      background-color: rgb(255, 255, 255);
+      height: 100%;
+      width: 100px; 
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    
+    .screen{
+      background-image: url("https://images.unsplash.com/photo-1631613062045-fc7626a6f7e7?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Nnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&h=700&q=90");
+      background-size: cover;
+      height: 100%;
+      width: 100px;
+      flex: 1;
+    }
+  }
+
+  .inputField{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    label{
+      font-variant-caps: all-small-caps;
+      color: gray;
+    }
+    
+    input{
+      border: none;
+      background: transparent;
+      border-bottom: 4px solid #d6b6a7;
+      padding: 17px 15px;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .screen{
+    flex: 0 !important;
+  }
+}
