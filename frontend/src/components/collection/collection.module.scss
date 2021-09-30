@@ -1,0 +1,16 @@
+.ul{
+  list-style-type: none;
+
+  li{
+    padding: 20px;
+    border-bottom: 1px solid #8e8e8e;
+    width: 90%;
+    margin: auto;
+    color: #ebebeb;
+    transition: 1s all;
+  }
+  li:hover{
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
